@@ -2,7 +2,6 @@ const Blog = require('../model/blogMode');
 
 exports.createBlog = async (req, res) => {
   try {
-    req.body(req.body);
     const newBlog = await Blog.create(req.body);
     res.status(201).json({
       status: 'success',
