@@ -7,6 +7,6 @@ exports.connectToDatabase = async () => {
     );
     console.log('Successfully connected to databaswe');
   } catch (err) {
-    console.log(err);
+    console.log(err.message);
   }
 };
